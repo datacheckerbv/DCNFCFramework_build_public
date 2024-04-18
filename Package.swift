@@ -29,6 +29,6 @@ let package = Package(
 //        .testTarget(
 //            name: "DCNFCFrameworkTests",
 //            dependencies: ["DCNFCFramework"]),
-        .binaryTarget(name: "DCNFCFramework", path: "./Sources/DCNFCFramework_Code.xcframework")
+        .binaryTarget(name: "DCNFCFramework", path: "./Sources/DCNFCFramework.xcframework")
     ]
 )
