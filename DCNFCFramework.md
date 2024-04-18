@@ -1,13 +1,6 @@
-# DatacheckerNFCPod
+# DCNFCFramework
 
-[![CI Status](https://img.shields.io/travis/omkardatachecker/DatacheckerNFCPod.svg?style=flat)](https://travis-ci.org/omkardatachecker/DatacheckerNFCPod)
-[![Version](https://img.shields.io/cocoapods/v/DatacheckerNFCPod.svg?style=flat)](https://cocoapods.org/pods/DatacheckerNFCPod)
-[![License](https://img.shields.io/cocoapods/l/DatacheckerNFCPod.svg?style=flat)](https://cocoapods.org/pods/DatacheckerNFCPod)
-[![Platform](https://img.shields.io/cocoapods/p/DatacheckerNFCPod.svg?style=flat)](https://cocoapods.org/pods/DatacheckerNFCPod)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
@@ -18,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 
 DCNFCFramework is available through [GitHub](https://github.com/). To install
-it, simply add the following line to your Podfile:
+it, simply add the following framework to your target:
 
 1. Add Source repo to Framework
 ```ruby
@@ -54,14 +47,13 @@ Before buiding application, please perform following steps.
 You need to import following frameworks in your class.
 
 ```swift
-import DatacheckerNFCPod
-import QKMRZScanner
+import DCNFCFramework
 ```
 
-Work flow of this pod is as follows
+Work flow of this framework is as follows
 
 1. Read MRZ of the Document first: 
-    To read MRZ, this pod provides a separate interface/UIViewcontroller called 'MRZScanViewController'.  Please use Following code snippet to call the 'MRZScanViewController' over current ViewController. (Your view controller should conform to 'QKMRZScannerViewDataCheckerDelegate' in order to receive scan result.)
+    To read MRZ, this framework provides a separate interface/UIViewcontroller called 'MRZScanViewController'.  Please use Following code snippet to call the 'MRZScanViewController' over current ViewController. (Your view controller should conform to 'QKMRZScannerViewDataCheckerDelegate' in order to receive scan result.)
     ```swift
         private func loadMRZScanViewController() {
         let controller = MRZScanViewController()
@@ -74,18 +66,18 @@ Work flow of this pod is as follows
  
 
 2. Receive MRZ Scannin Result in the Delegate method:
-    Once the scan is complete, you will receive scanning result in the 'QKMRZScannerViewDataCheckerDelegate' method. Please refer the code snippet below.(Make sure your view controller is conforming to 'QKMRZScannerViewDataCheckerDelegate' in order to receive scan result.). Store the result in a reference variable of type 'DatacheckerNFCPod.ScanMRZResult'. 
+    Once the scan is complete, you will receive scanning result in the 'QKMRZScannerViewDataCheckerDelegate' method. Please refer the code snippet below.(Make sure your view controller is conforming to 'QKMRZScannerViewDataCheckerDelegate' in order to receive scan result.). Store the result in a reference variable of type 'ScanMRZResult'. 
     ```swift
         @available(iOS 15, *)
         extension ViewController: QKMRZScannerViewDataCheckerDelegate{
-            func didMRZScanComplete(scanResult: DatacheckerNFCPod.ScanMRZResult) {
+            func didMRZScanComplete(scanResult: ScanMRZResult) {
                 self.scanResult = scanResult
             }
         }
     ```
     
 3. Pass this Result to the Document Scan Utility Class:
-    To Scan the NFC Enabled passport, you will need above scanned result. In this pod, there is a helper class which helps to scan the NDC passport and also returns the result in the calling class using scanned MRZ result. Please use following snippet to create instace variable of the helper class.
+    To Scan the NFC Enabled passport, you will need above scanned result. In this framework, there is a helper class which helps to scan the NDC passport and also returns the result in the calling class using scanned MRZ result. Please use following snippet to create instace variable of the helper class.
     
     ```swift
         var passportHelper: DocumentScanHelper!
@@ -124,7 +116,7 @@ Work flow of this pod is as follows
     ```swift
         @available(iOS 15, *)
         extension ViewController: DocumentNFCScanDelegate {
-            func didNFCDocumentScanComplete(passportModel: DatacheckerNFCPod.NFCPassportModel) {
+            func didNFCDocumentScanComplete(passportModel: NFCPassportModel) {
                 print("Document Scan Successful")
                 print("Document Number is: \(passportModel.documentNumber)")
             }
@@ -144,4 +136,4 @@ Work flow of this pod is as follows
 
 ## License
 
-DatacheckerNFCPod is available under the MIT license. See the LICENSE file for more info.
+DCNFCFramework is available under the MIT license. See the LICENSE file for more info.
