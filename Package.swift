@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DCNFCFramework",
+    platforms: [.iOS(.v13)], 
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -34,6 +35,12 @@ let package = Package(
 //            name: "DCNFCFrameworkTests",
 //            dependencies: ["DCNFCFramework"]),
 //        .target(name: "DCNFCFramework",dependencies: ["openssl", "SwiftyTesseract"]),
+//        ,
+//        .testTarget(
+//            name: "DCNFCFrameworkTest",
+//            dependencies: ["DCNFCFramework"]
+//        )
+//        ,
         .binaryTarget(name: "DCNFCFramework", path: "./Sources/DCNFCFramework.xcframework")
     ]
 )
