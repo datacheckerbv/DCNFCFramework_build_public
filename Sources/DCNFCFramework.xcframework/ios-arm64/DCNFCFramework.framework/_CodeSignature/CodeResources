@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<data>
+		kK6p+Y6UMNAG0T2SXGdoDorcSqY=
+		</data>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<data>
+		UuZwDf7XgEdGqYL714EDQxfGgmI=
+		</data>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<data>
+		IvfIVM6uCjriSgYOkTsO7Wc1mmQ=
+		</data>
 		<key>Headers/DCNFCFramework-Swift.h</key>
 		<data>
 		BMO5puZP+ktUniP6TAfl5rPe8Ok=
@@ -18,7 +30,7 @@
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		r1OyZBTNe9elfgfEaLqn27ibL8c=
+		C/KWuoA106spyAg1MCt7mfrBCh0=
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -43,6 +55,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2vCOx7feAtkKW5LCdlkmW91CSmPw3IQzglpDBfOt4sc=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EKX81F1IQuyZwC9GaDGLvdlKWzWJXCPSsebUNZA6Lkk=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VZfxNRziD/tUJR7kQoN01QB5ZTd7u6Xcn7V3aM1vdkg=
+			</data>
+		</dict>
 		<key>Headers/DCNFCFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -61,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Yty9EwQvmXLGyeE1N/WlU8wAjg/sGnkpU+TEEGgA9Y=
+			NCVsEWmL40OTeZu2XSUzaFpDEiCgvy4F+dNDCf4fVsM=
 			</data>
 		</dict>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>

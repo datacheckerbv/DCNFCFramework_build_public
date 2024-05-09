@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<data>
+		+IqKAHF4jS/WWJdSmgaY0il0RwI=
+		</data>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<data>
+		F9hwhbTBLlg8QgdM6tIhxRdYI6g=
+		</data>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<data>
+		LYz71ItGU6DQ32DXZk5VDRJqaA0=
+		</data>
 		<key>Headers/DCNFCFramework-Swift.h</key>
 		<data>
 		cmyRyRGIQX0QXoJvpGlwn5QH7vE=
@@ -18,7 +30,7 @@
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		r1OyZBTNe9elfgfEaLqn27ibL8c=
+		C/KWuoA106spyAg1MCt7mfrBCh0=
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +50,7 @@
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		r1OyZBTNe9elfgfEaLqn27ibL8c=
+		C/KWuoA106spyAg1MCt7mfrBCh0=
 		</data>
 		<key>Modules/DCNFCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -63,6 +75,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/OpenSSL.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fvJf6inkpu8iH7peU5GWbm8ZqppEPeSABnbGpHP+z8I=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CKXCHn5HAWH8CEJ/4iBGfyaNAF4kRNhHAhep0Iep7gQ=
+			</data>
+		</dict>
+		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZsGx3wCXx8q4VC03fmCuPPUacCXK0ZuPinO/+0AkXeo=
+			</data>
+		</dict>
 		<key>Headers/DCNFCFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -81,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Yty9EwQvmXLGyeE1N/WlU8wAjg/sGnkpU+TEEGgA9Y=
+			NCVsEWmL40OTeZu2XSUzaFpDEiCgvy4F+dNDCf4fVsM=
 			</data>
 		</dict>
 		<key>Modules/DCNFCFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Yty9EwQvmXLGyeE1N/WlU8wAjg/sGnkpU+TEEGgA9Y=
+			NCVsEWmL40OTeZu2XSUzaFpDEiCgvy4F+dNDCf4fVsM=
 			</data>
 		</dict>
 		<key>Modules/DCNFCFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
